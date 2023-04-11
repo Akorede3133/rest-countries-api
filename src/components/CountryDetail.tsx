@@ -86,7 +86,7 @@ const CountryDetail = () => {
               {
                 borders && borders.map(item => {
                   return (
-                      <li className='myShadow py-1 px-4 text-center'>{item}</li>
+                      <li key={item} className='myShadow py-1 px-4 text-center'>{item}</li>
                   )
                 })
               }

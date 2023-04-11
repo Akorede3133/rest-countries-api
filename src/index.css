@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.myShadow {
+    @apply shadow-[0px_0px_4px_rgba(0,0,0,0.2),-0px_-0px_4px_rgba(0,0,0,0.2)]
+}

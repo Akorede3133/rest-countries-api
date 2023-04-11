@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import continentsData from '../../utils/continents';
+import continentsData from '../utils/continents';
 import { countryProp, useGlobalContext } from '../context/context';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
@@ -15,7 +15,7 @@ const Search = () => {
     setShowDropown(false);
   }
   const fetchData = async () => {
-    const response = await fetch('../../utils/data.json');
+    const response = await fetch('./data.json');
     const data: countryProp[] = await response.json();
     setTempData(data)    
   }

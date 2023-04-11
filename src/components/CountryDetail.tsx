@@ -8,7 +8,7 @@ const CountryDetail = () => {
   const [country, setCountry] = useState<countryProp[]>([] as countryProp[]);
   const {id} = useParams();
   const fetchData = async () => {
-    const response = await fetch('../../utils/data.json');
+    const response = await fetch('../data.json');
     const data: countryProp[] = await response.json();
     setCountries(data)    
   }
